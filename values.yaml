@@ -5,6 +5,10 @@ backend:
     repository: ecom-backend
     tag: test
   port: 5000
+  env:
+    GOOGLE_CLIENT_ID: "dummy-client-id"
+    GOOGLE_CLIENT_SECRET: "dummy-client-secret"
+    GOOGLE_CALLBACK_URL: "http://localhost:30007/auth/google/callback"
 
 frontend:
   image:
